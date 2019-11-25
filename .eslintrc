@@ -1,0 +1,11 @@
+{
+    "env":{
+        "browser": true,
+        "node": true,
+        "Es6": true
+    },
+    "parserOptions":{
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    }
+}

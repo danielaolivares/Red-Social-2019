@@ -1,0 +1,35 @@
+{
+  "name": "chile-desperto",
+  "version": "1.0.0",
+  "description": "ChileDespertó is an informative application without political color, which seeks to help find alternative means of communication, convene demonstrations, inform us about the situation in our country, how our demands go and go to a page where you can create your proposals",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest--coverage",
+    "eslint": "eslint --ext .js src/test/",
+    "htmlhint": "htmlhint src/* .html",
+    "pretest": "npm run eslint && npm htmhint",
+    "deploy": "gh-pages -d src/*"
+  },
+  "keywords": [
+    "chile",
+    "manifestaciones",
+    "cabildos",
+    "asamblea",
+    "constiuyente",
+    "informacion"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.4",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.7.1",
+    "eslint-plugin-jest": "^23.0.4",
+    "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
+    "htmlhint": "^0.11.0",
+    "jest": "^24.9.0"
+  }
+}
