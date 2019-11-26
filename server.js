@@ -1,6 +1,6 @@
 var express = require ('express');
 var app= express ();
-const port=5250;
+const port=5254;
 app.use(express.static(__dirname + '/src'));
 
 app.get ('/', (resquest,response)=>{

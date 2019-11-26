@@ -1,0 +1,108 @@
+.pagePrincipal{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 360px;
+    max-width: 414px;
+    height: 640px;
+    max-height: 846px;
+    background-color:#FFFFFF;
+}
+.records{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 360px;
+    max-width: 414px;
+    height: 640px;
+    max-height: 846px;
+    background-image: url(imagen/plazaItalia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.countainerLogo{
+    height: 80px;
+    width: 80px;
+}
+.logo{
+    width: 100px;
+    margin: 0 0 80px 0;
+    display: inline-block;
+    opacity: 0.5;
+}
+ .imagenStart{
+    width: 300px; 
+    height: 350px;
+    display: block;
+    margin: auto;
+    /* margin-left: 30px; */
+    /* margin-top: 5px;  */
+}
+/* .menu{
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center;
+    flex-direction: column;
+} */
+#imgGoogle, #imgFacebook{
+    width: 15px;
+    height: 15px;
+}
+.btn{
+    width: 249px;
+    height: 35px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+#btnLogin, #btnLoginOne{
+    background-color: #D80604;
+    color: white;
+    border-radius: 40px;
+}
+#btnFacebook{
+    border-color: #1654A4;
+    color: #1654A4;
+    border-radius: 40px;
+}
+#btnGoogle{
+    border-color: #D80604;
+    color: #D80604;
+    border-radius: 40px;
+}
+
+/* registro con email y clave */
+#name, #email, #password {
+    border-radius: 40px;
+    display: block;
+    margin-top: 7px;
+    width: 200px;
+    text-align: center;
+
+}
+.containerRegistry{
+    background-color: rgba(255, 255, 255, 0.37);
+    width: 300px;
+    height: 120px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    margin-top: 84px;
+    margin-left: 29px;
+}
+#btnRegistry{
+    background-color: #1654A4;
+    color: white;
+    margin-top: 8px;
+    width: 200px;
+    border-radius: 40px;
+}
+/* iniciar sesión */
+#btnLoginOne{
+    margin-top: 12px;
+    width: 200px;
+    height: 22px;
+}
