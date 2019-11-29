@@ -1,5 +1,6 @@
 import {createAccount} from "../begins/begins.js"
 import {loginOk} from "../begins/begins.js"
+import {googleRegistration} from "../begins/begins.js"
 
 export const beginsViews = ()=> {
     const root = document.getElementById("root");
@@ -27,14 +28,15 @@ export const beginsViews = ()=> {
         //console.log("click ok")
        login();
    })
-//    const btnFacebook= document.getElementById("btnFacebook");
-//    btnFacebook.addEventListener('click', () =>{
-
-//    })
-//    const btnGoogle= document.getElementById("btnGoogle");
-//    btnGoogle.addEventListener('click', () => {
-
-//    })
+    const btnFacebook= document.getElementById("btnFacebook");
+    btnFacebook.addEventListener('click', () =>{
+        btnFacebook();
+   })
+    const btnGoogle= document.getElementById("btnGoogle");
+    btnGoogle.addEventListener('click', () => {
+       // console.log("cliki listi")
+        googleRegistration();
+    })
 }
    const register = () =>{
    const root =document.getElementById("root");
@@ -96,7 +98,7 @@ export const homePage=()=>{
     root.innerHTML= 
     `<div class="homePage">
     <header class="countainerLogo"><img src="imagen/logo.png" class="logo"></header>
-    <nav>Manifestaciones | Información</nav>
+    <main><div id="manifestations">Manifestaciones</div><div id="information">Información</div></main>
     <section class="countainerHome"><p>#ChileDespertó es una aplicación informativa sin color político, que busca ayudar a encontrar medios de comunicación alternativa, convocar manifestaciones,  informarnos sobre la situación de nuestro país, como van nuestras demandas y direccionarnos a una pagina donde puedes crear tus propuestas.</p></section>
   
 <img src="imagen/arrow left.png" alt="">
