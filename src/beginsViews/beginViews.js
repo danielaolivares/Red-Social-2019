@@ -103,4 +103,29 @@ export const homePage=()=>{
   
 <img src="imagen/arrow left.png" alt="">
 </div>`
+const manifestations= document.getElementById("manifestations");
+manifestations.addEventListener('click', ()=>{
+    //console.log("funciona el click")
+    manifestationsPost();
+})
+const information = document.getElementById("information");
+information.addEventListener('click',()=>{
+    //console.log("click information")
+    informationPost();
+})
+}
+const manifestationsPost = ()=>{
+    const root = document.getElementById("root");
+    root.innerHTML=
+    `<div class="manifestationPage">
+    <header class="countainerLogo"><img src="imagen/logo.png" class="logo"></header>
+    <main><div id="manifestations">Manifestaciones</div><div id="information">Información</div></main>
+    <section class="countainerText">
+        <input type="date" name="date" class="date" placeholder="Fecha" required>
+        <input type="time" name="time" class="time" placeholder="Hora" required>
+        <textarea name="commentary" class="commentary" cols="40" rows="10"required placeholder="Ubicación e información extra."></textarea>
+        <button class="send">Enviar</button>
+    </section>  
+<img src="imagen/arrow left.png" alt="">
+</div>`
 }
