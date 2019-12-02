@@ -154,3 +154,9 @@ main{
 .date, .time, .commentary, .send{
  margin: 10px 90px 10px 10px;
 }
+.manifestationPage{
+    display: block;
+}
+/* #allPost{
+    margin-top: 1px;
+} */

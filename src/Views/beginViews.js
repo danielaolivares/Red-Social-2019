@@ -1,6 +1,6 @@
-import {createAccount} from "../begins/begins.js"
-import {loginOk} from "../begins/begins.js"
-import {googleRegistration} from "../begins/begins.js"
+import {createAccount} from "../module/begins.js"
+import {loginOk} from "../module/begins.js"
+import {googleRegistration} from "../module/begins.js"
 
 export const beginsViews = ()=> {
     const root = document.getElementById("root");
@@ -91,41 +91,4 @@ const loginForm = () =>{
     let password= document.getElementById("password").value;
  //console.log(email, password);
  loginOk(email,password);
-}
-export const homePage=()=>{
-    //console.log("unidas")
-    const root =document.getElementById("root");
-    root.innerHTML= 
-    `<div class="homePage">
-    <header class="countainerLogo"><img src="imagen/logo.png" class="logo"></header>
-    <main><div id="manifestations">Manifestaciones</div><div id="information">Información</div></main>
-    <section class="countainerHome"><p>#ChileDespertó es una aplicación informativa sin color político, que busca ayudar a encontrar medios de comunicación alternativa, convocar manifestaciones,  informarnos sobre la situación de nuestro país, como van nuestras demandas y direccionarnos a una pagina donde puedes crear tus propuestas.</p></section>
-  
-<img src="imagen/arrow left.png" alt="">
-</div>`
-const manifestations= document.getElementById("manifestations");
-manifestations.addEventListener('click', ()=>{
-    //console.log("funciona el click")
-    manifestationsPost();
-})
-const information = document.getElementById("information");
-information.addEventListener('click',()=>{
-    //console.log("click information")
-    informationPost();
-})
-}
-const manifestationsPost = ()=>{
-    const root = document.getElementById("root");
-    root.innerHTML=
-    `<div class="manifestationPage">
-    <header class="countainerLogo"><img src="imagen/logo.png" class="logo"></header>
-    <main><div id="manifestations">Manifestaciones</div><div id="information">Información</div></main>
-    <section class="countainerText">
-        <input type="date" name="date" class="date" placeholder="Fecha" required>
-        <input type="time" name="time" class="time" placeholder="Hora" required>
-        <textarea name="commentary" class="commentary" cols="40" rows="10"required placeholder="Ubicación e información extra."></textarea>
-        <button class="send">Enviar</button>
-    </section>  
-<img src="imagen/arrow left.png" alt="">
-</div>`
 }

@@ -1,4 +1,4 @@
-import {homePage} from "../beginsViews/beginViews.js"
+import {homePage} from "../Views/mainViews.js"
 
 //1 creamos funcion con promesas para que se registre con firebase
 export const createAccount =(name, email,password)=>{
