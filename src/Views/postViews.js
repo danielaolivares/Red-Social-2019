@@ -1,6 +1,6 @@
 import {writePost} from "../module/post.js"
 import { read } from "../module/post.js";
-//import { read } from "../module/post.js"
+
 export const manifestationsPost = ()=>{
     read();
     const root = document.getElementById("root");
@@ -14,6 +14,7 @@ export const manifestationsPost = ()=>{
         <textarea name="commentary" id="commentary" cols="40" rows="10"required placeholder="Ubicación e información extra."></textarea>
         <button id="send">Enviar</button>
     </section> 
+    <article id="allCommentary"></article> 
 <img src="imagen/arrow left.png" alt="">
 </div>`
 const send = document.getElementById("send");

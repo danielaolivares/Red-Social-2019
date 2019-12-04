@@ -19,13 +19,30 @@ export const writePost =(date, time, commentary)=>{
 
 //Leer datos
 export const read = ()=>{
-    const root1= document.getElementById("root1");
     var database = firebase.firestore();
-    database.collection("manifestaciones").get().then((querySnapshot) => {
-        root1.innerHTML='';
+    database.collection("manifestaciones").orderBy("date").onSnapshot((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-            console.log(`${doc.id} => ${doc.data().date}${doc.data().time}${doc.data().commentary}`);
-        root1.innerHTML+=`<article id="allPost"> Fecha: ${doc.data().date}  Hora : ${doc.data().time}  Ubicación e información :${doc.data().commentary} </article>`
+            document.getElementById("allCommentary").innerHTML +=` Fecha : ${doc.data().date}<br>  Hora : ${doc.data().time}<br>  Ubicación e información : ${doc.data().commentary}<br><button id="delete">Borrar</button><button id="edit">Editar</button><br>`
+            // console.log(`${doc.id} => ${doc.data().date}${doc.data().time}${doc.data().commentary}`);
+            
+          const removed = document.getElementById("delete");
+          removed.addEventListener('click', ()=>{
+              deleted(`${doc.id}`);
+          });
+          const edit = document.getElementById("edit");
+          edit.addEventListener('click', ()=>{
+            editing();
+          });        
         });
     });
 }
+
+//borrar datos
+ export const deleted =(id)=>{
+    var database = firebase.firestore();
+    database.collection("manifestaciones").doc(id).delete().then(function() {
+        console.log("Document successfully deleted!");
+    }).catch(function(error) {
+        console.error("Error removing document: ", error);
+    });
+ }

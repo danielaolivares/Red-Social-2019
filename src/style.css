@@ -157,6 +157,13 @@ main{
 .manifestationPage{
     display: block;
 }
-/* #allPost{
-    margin-top: 1px;
-} */
+/* boton borrar */
+#delete{
+    background-color: #D80604;
+    color: white;
+    border-radius: 40px;
+}
+#edit{
+    background-color: #ffc209;
+    border-radius: 40px;
+}

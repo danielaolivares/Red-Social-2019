@@ -1,5 +1,5 @@
 import {manifestationsPost} from "./postViews.js"
-import {read} from "../module/post.js"
+//import {read} from "../module/post.js"
 
 export const homePage=()=>{
     //console.log("unidas")
@@ -16,7 +16,7 @@ const manifestations= document.getElementById("manifestations");
 manifestations.addEventListener('click', ()=>{
     //console.log("funciona el click")
     manifestationsPost();
-    read();
+    
 })
 const information = document.getElementById("information");
 information.addEventListener('click',()=>{
