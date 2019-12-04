@@ -115,27 +115,43 @@
     max-width: 414px;
     height: 640px;
     max-height: 846px;
+    background-image: url(imagen/chile2910.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+
 }
 .countainerHome{
     width: 300px;
     height: 300px;
     border-radius: 40px;
+    text-align: center;
     display: flex;
     justify-content: center;
     background-position: center;
     margin-top: 60px;
-    margin-left: 29px;
-    border: 3px solid #1654A4;
+    margin-left: 25px;
+    border: 1px solid #1654A4;
+    background-color: rgba(255, 255, 255, 0.41);
 }
-main{
+#infoPage{
+    margin-top: 65px;
+    width: 280px;    
+}
+.btnMain{
+    border-radius: 10px;
+    background-color: rgba(216, 8, 4, 0.719);
+    width: 130px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+/* main{
     text-align: center;
     margin-top: 30px;
-    border-radius: 40px;
     width: 300px;
     height: 30px;
     margin-left: 29px;
-    border: 3px solid #D80604;
-}
+   }  */
 /* Aplicar post de manifestaciones */
 .manifestationPage{
     margin: 0;

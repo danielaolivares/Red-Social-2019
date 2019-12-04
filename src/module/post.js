@@ -20,7 +20,7 @@ export const writePost =(date, time, commentary)=>{
 //Leer datos
 export const read = ()=>{
     var database = firebase.firestore();
-    database.collection("manifestaciones").orderBy("date").onSnapshot((querySnapshot) => {
+    database.collection("manifestaciones").onSnapshot((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             document.getElementById("allCommentary").innerHTML +=` Fecha : ${doc.data().date}<br>  Hora : ${doc.data().time}<br>  Ubicación e información : ${doc.data().commentary}<br><button id="delete">Borrar</button><button id="edit">Editar</button><br>`
             // console.log(`${doc.id} => ${doc.data().date}${doc.data().time}${doc.data().commentary}`);

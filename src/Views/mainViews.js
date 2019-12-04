@@ -7,8 +7,8 @@ export const homePage=()=>{
     root.innerHTML= 
     `<div class="homePage">
     <header class="countainerLogo"><img src="imagen/logo.png" class="logo"></header>
-    <main><div id="manifestations">Manifestaciones</div><div id="information">Información</div></main>
-    <section class="countainerHome"><p>#ChileDespertó es una aplicación informativa sin color político, que busca ayudar a encontrar medios de comunicación alternativa, convocar manifestaciones,  informarnos sobre la situación de nuestro país, como van nuestras demandas y direccionarnos a una pagina donde puedes crear tus propuestas.</p></section>
+    <main><button id="manifestations" class="btnMain">Manifestaciones</button><button id="information"class="btnMain">Información</button></main>
+    <section class="countainerHome"><p id="infoPage">#ChileDespertó es una aplicación informativa sin color político, que busca ayudar a encontrar medios de comunicación alternativa, convocar manifestaciones,  informarnos sobre la situación de nuestro país, como van nuestras demandas y direccionarnos a una pagina donde puedes crear tus propuestas.</p></section>
   
 <img src="imagen/arrow left.png" alt="">
 </div>`
